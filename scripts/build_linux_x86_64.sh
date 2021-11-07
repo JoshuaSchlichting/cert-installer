@@ -1,0 +1,1 @@
+env GOOS=linux GOARCH=amd64 go build -o bin/cert-installer_linux_x86_64 .
