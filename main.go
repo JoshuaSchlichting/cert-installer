@@ -23,12 +23,12 @@ func main() {
 		fmt.Printf("Unable to write file: %v", err)
 	}
 
-	err = ioutil.WriteFile(fmt.Sprintf("%s//%s", *downloadDir, "ca_bundle.crt"), []byte(certificate_crt), 0755)
+	err = ioutil.WriteFile(fmt.Sprintf("%s//%s", *downloadDir, "ca_bundle.crt"), []byte(ca_bundle_crt), 0755)
 	if err != nil {
 		fmt.Printf("Unable to write file: %v", err)
 	}
 
-	err = ioutil.WriteFile(fmt.Sprintf("%s//%s", *downloadDir, "certificate.crt"), []byte(ca_bundle_crt), 0755)
+	err = ioutil.WriteFile(fmt.Sprintf("%s//%s", *downloadDir, "certificate.crt"), []byte(certificate_crt), 0755)
 	if err != nil {
 		fmt.Printf("Unable to write file: %v", err)
 	}
